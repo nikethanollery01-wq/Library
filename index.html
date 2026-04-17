@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <input type="search" class="search-input" placeholder="Search your favourite books">
+        <div class="user-menu">
+            <img class="notification" src="sources/notification1.png" width="20px">
+            <div>
+                <img class="avatar" src="sources/avatar.jpg" width="30px">
+                <span>John</span>
+            </div>            
+        </div>
+    </nav>
+    <div class="site-title">
+        <img class="logo" src="sources/icon1.png" width="30px">
+        <h1 class="logo-text">Book<span>Base</span></h1><br>
+    </div>
+    <aside class="left-sidebar">
+        <ul>
+            <li><a href="#">My Library</a></li>
+            <li><a href="#">Completed</a></li>
+            <li><a href="#">Not Read</a></li>
+            <li><a href="#">Download</a></li>
+            <li><a href="#">Favourite</a></li>
+            <li><a class="add-book">Add Book</a></li>
+        </ul>
+        <dialog id="enroll-dialog">
+            <form id="book-form">
+                <div class="form-group">
+                    <label for="author">Author Name</label>
+                    <input type="text" id="author" name="author" required placeholder="Full name of the author">
+                </div>
+
+                <div class="form-group">
+                    <label for="title">Book Title</label>
+                    <input type="text" id="title" name="title" required placeholder="Official title">
+                </div>
+
+                <div class="form-group">
+                    <label for="pages">Page Count</label>
+                    <input type="number" id="pages" name="pages" min="1" max="1000" placeholder="546" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="imgUrl">Book Cover Image URL</label>
+                    <input type="url" id="imgUrl" name="imgUrl" placeholder="https://example.com/cover.jpg">
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="read" name="read">
+                    <label for="read" style="margin-bottom: 0;">Mark as Read</label>
+                </div>
+                
+
+                <button class="submit-btn" type="submit">Add to Library</button>
+            </form>
+        </dialog>
+    </aside>
+    <section class="recommended-container">
+            <div  class="recommended-header">
+                <h2>My Library</h2>
+                <button>See All > </button>
+            </div>
+            <div class="recommended-template">
+            </div>
+            <template class="template">
+                <div class="book">
+                    <img class="img">
+                    <div class="book-description">
+                        <h2 class="title"></h2>
+                        <h3 class="author"></h3>
+                        <button class="read">Completed</button>
+                        <button class="remove">Remove</button>
+                    </div>                    
+                </div>
+            </template>
+    </section>
+
+    <aside class="right-sidebar">
+            <div class="remove-sidebar">
+                <img src="sources/novel2.webp">
+                <h2>Company of One</h2>
+                <span>Paul Jarvis</span>
+                <div class="stats">
+                    <div>
+                        <p>320</p>
+                        <span>Pages</span>
+                    </div>
+                    <div>
+                        <p>4.5</p>
+                        <span>Rating</span>
+                    </div>
+                    <div>
+                        <p>110</p>
+                        <span>Reviews</span>
+                    </div>                    
+                </div>
+                <p>Company of One offers a refreshingly original business strategy that’s focused on a 
+                    commitment to being better instead of bigger. Why? Because staying small provides one 
+                    with the freedom to pursue more meaningful pleasures in life—and avoid the headaches that…</p>
+            </div>
+        </aside>
+        <div class = 'temp'>
+
+            <template class="template-sidebar">
+               <div class="remove-sidebar">
+                   <img class="sidebar-img">
+                   <h2 class="sidebar-title"></h2>
+                   <span class="sidebar-author"></span>
+                   <div class="stats">
+                       <div>
+                           <p class="sidebar-pages"></p>
+                           <span>Pages</span>
+                       </div>
+                       <div>
+                           <p>4.5</p>
+                           <span>Rating</span>
+                       </div>
+                       <div>
+                           <p>110</p>
+                           <span>Reviews</span>
+                       </div>                    
+                   </div>
+                   <p>Company of One offers a refreshingly original business strategy that’s focused on a 
+                       commitment to being better instead of bigger. Why? Because staying small provides one 
+                       with the freedom to pursue more meaningful pleasures in life—and avoid the headaches that…</p>
+                   
+               </div>
+           </template>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
