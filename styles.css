@@ -251,12 +251,12 @@ a:hover{
 /* -----------RIGHT-SIDEBAR------------------- */
 
 .right-sidebar img{
-    width : 50%;
+    width : 60%;
     transition: 0.2s;
 }
 
 .right-sidebar img:hover{
-    width : 55%;
+    width : 65%;
     transition: 0.5s;
 }
 
@@ -287,6 +287,7 @@ a:hover{
 #enroll-dialog {
     border: 1px solid #2c3e50;
     border-radius: 10px;
+    width: 30%;
 }
 
 .form-group{ 
@@ -302,7 +303,7 @@ label{
 
 input[type="text"],
 input[type="number"],
-input [type="url"]{ 
+#imgUrl{ 
     width: 100%; 
     padding: 8px; 
     box-sizing: border-box;

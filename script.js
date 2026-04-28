@@ -6,16 +6,18 @@ const rightSidebar = document.querySelector('.right-sidebar')
 const sidebarTemplate = document.querySelector('.template-sidebar')
 
 
-const myLibrary = [
-]
+const myLibrary = []
 
-function Book(author, title,id,pages,imgUrl, read ) {
-    this.author = author
-    this.title = title
-    this.id = id
-    this.pages = pages
-    this.imgUrl = imgUrl
-    this.read = read
+
+class Book {
+    constructor(author, title, id, pages, imgUrl, read){
+        this.author = author
+        this.title = title
+        this.id = id
+        this.pages = pages
+        this.imgUrl = imgUrl
+        this.read = read
+    }
 }
 
 myLibrary.push(
